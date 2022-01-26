@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F0ECE3;
+    --footer-color: #DFD3C3;
+    color: rgb(51, 51, 51);
+    box-sizing: border-box;
+}
+
+.grillaPadre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7% 67% 26%;
+    grid-template-areas: 
+    " nav nav nav "
+    " presentacion presentacion presentacion "
+    " footer footer footer ";
+}
+
+.header {
+    grid-area: nav;
+    margin: 5px;
+    padding: 5px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.nav li {
+    margin: 5px;
+    padding: 5px;
+    border-right: rgba(65, 65, 65, 0.667) 2px dashed;
+    border-left: rgba(65, 65, 65, 0.667) 2px dashed;
+}
+
+.header__logo {
+    margin: 15px 0px 0px 0px;
+}
+
+.nav__lista a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav__lista a:visited{
+    color: black;
+}
+
+.nav__lista a:hover {
+    font-size: 20px;
+    color: #A68DAD;
+    transition: all .5s ease-in-out;
+}
+
+/* index */
+
+.presentacion {
+    grid-area: presentacion;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto {
+    margin: 15px 0px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+} 
+
+.texto__img {
+    width: 700px;
+    height: 350px;
+}
+
+.texto__p {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+/* Fin Index */
+
+
+/* Pagina Nosotros */
+.grillaNosotros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 7% 67% 26%;
+    grid-template-areas: 
+    " nav nav nav "
+    " nosotros nosotros nosotros "
+    " footer footer footer ";
+}
+.nosotros {
+    grid-area: nosotros;
+}
+.divNosotros {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+.divNosotros__p {
+    text-align: center;
+    width: 700px;
+    height: 250px; 
+}
+
+/* Fin pagina nosotros */
+
+/* Pagina Estilos */
+.grillaEstilos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 40% 45%;
+    grid-template-areas: 
+    " nav nav nav "
+    " estilos estilos estilos "
+    " footer footer footer ";
+}
+
+.estilos {
+    grid-area: estilos;
+}
+
+.divEstilos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.divEstilos-hijo {
+    padding: 5px;
+    width: 600px;
+    border: solid 1px gray;
+    border-radius: 2%;
+}
+
+.divEstilos img{
+    margin: 15px;
+    width: 250px;
+    height: 350px;
+}
+
+.divEstilos p {
+    display: inline-block;
+    position: absolute;
+    margin: 10px;
+    width: 250px;
+    height: 200px;
+}
+
+.div__ul {
+    margin-left: 15px;
+    list-style: none;
+}
+
+.div__negrita {
+    padding: 3px;
+    font-weight: bold;
+    border-left: 1px solid gray;
+} 
+
+/* Fin Pagina Estilos */
+
+/* Pagina de contacto */
+.grillaContacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 40% 45%;
+    grid-template-areas: 
+    " nav nav nav "
+    " contacto contacto contacto "
+    " footer footer footer ";
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 15px 0px 15px;
+    padding: 15px;
+}
+
+.formulario fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+.formulario label {
+    margin: 15px 0px 0px 15px;
+}
+
+.formulario input {
+    margin: 0px 0px 15px 15px;
+    text-align: center;
+}
+
+/* Fin de pagina de contacto */
+
+/* Pagina Preguntas Frecuentes */
+
+.grillaPreguntas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15% 40% 45%;
+    grid-template-areas: 
+    " nav nav nav "
+    " pregunta pregunta pregunta "
+    " footer footer footer ";
+}
+
+.preguntas {
+    grid-area: preguntas;
+}
+
+.divPreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.divPreguntas h2 {
+    margin: 5px;
+}
+
+.divPreguntas__p {
+    width: 395px;
+}
+
+/* Fin Pagina Preguntas Frecuentes */
+
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background: var(--footer-color);
+    border-top: 2px #C7B198 solid;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer__div {
+    background-color: var(--footer-color);
+    text-align: center;
+}
+
+.footer__div--h1 {
+    background-color: var(--footer-color);
+    margin: 5px;
+}
+
+.footer__div--h4 {
+    background-color: var(--footer-color);
+    margin: 5px;
+}
+
+.footer__div--p {
+    background-color: var(--footer-color);
+    margin: 5px;
+} 
+
+.footer__redes {
+    background-color: var(--footer-color);  
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 22%;
+}
+
+.footer a {
+    background-color: var(--footer-color);
+}
+.footer__redes--img {
+    background-color: var(--footer-color);
+    width: 60px;
+    height: 60px;
+}
+
+.imgWsp {
+    background-color: transparent;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 6px;
+    right: 30px;
+}  
+
+/* Fin Footer */ 
+
+/* Responsive */
+
+@media screen  {
+    
+}
