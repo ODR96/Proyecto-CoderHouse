@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <title>Cerveceria OZ</title>
     </head>
 <body>
@@ -28,7 +29,7 @@
         </div>
     <div class="estilos">
         <div class="divEstilos">
-        <div class="divEstilos-hijo">
+        <div data-aos="flip-down" class="divEstilos-hijo">
             <h1>Cerveza IPA</h1>
             <img src="../image/ipa.jpg" alt="Cerveza IPA">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum exercitationem
@@ -42,7 +43,7 @@
                 <li><span class="div__negrita">SRM:</span> 15</li>
             </ul>
         </div>
-        <div class="divEstilos-hijo">
+        <div data-aos="flip-down" class="divEstilos-hijo">
             <h1>Cerveza Honey</h1>
             <img src="../image/honey.jpg" alt="Cerveza Honey">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum exercitationem
@@ -56,7 +57,7 @@
                 <li><span class="div__negrita">SRM:</span> 25</li>
             </ul>
         </div>
-        <div class="divEstilos-hijo">
+        <div data-aos="flip-down" class="divEstilos-hijo">
             <h1>Cerveza Golden</h1>
             <img src="../image/golden.jpg" alt="Cerveza Golden">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum exercitationem
@@ -92,5 +93,9 @@
         </div>
     </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

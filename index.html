@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Cerveceria OZ</title>
 </head>
 
@@ -32,13 +33,13 @@
         <div class="contenedor">
         <img src="./image/muestra.jpg" alt="Cabecera de pagina - Muestras de cervezas" width="100%" class="img-presentacion__img">
         <div class="texto">
-            <p class="texto__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam rerum neque. Tempora
+            <p data-aos="fade-left" class="texto__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ipsam rerum neque. Tempora
                 sunt eveniet repudiandae minima nostrum nobis a, ad magni, esse quibusdam, atque cumque. Repellat nobis
                 nihil deserunt! Numquam dicta veritatis vero nihil inventore, nobis reprehenderit. Nemo similique a vel
                 modi fuga eaque saepe beatae, tempore nulla veniam dolorem corrupti numquam. Itaque amet reiciendis
                 repellendus libero eaque minima, enim ex eum ad harum veritatis placeat consequatur aliquid cupiditate
                 voluptates. Hic totam nobis repudiandae soluta. Impedit magni tempore veritatis?</p>
-            <img src="./image/cervezas.jpg" alt="" class="texto__img">
+            <img data-aos="fade-left" src="./image/cervezas.jpg" alt="" class="texto__img">
         </div>
         </div>
     </div>
@@ -62,5 +63,9 @@
         </div>
     </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
