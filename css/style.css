@@ -149,6 +149,16 @@
     width: 600px;
     border: solid 1px gray;
     border-radius: 2%;
+    overflow: scroll hidden;
+}
+
+.divEstilos-hijo::-webkit-scrollbar{
+    height: 7px;
+}
+
+.divEstilos-hijo::-webkit-scrollbar-thumb{
+    background-color: #C7B198;
+    border-radius: 10px;
 }
 
 .divEstilos img{
@@ -313,8 +323,3 @@
 
 /* Fin Footer */ 
 
-/* Responsive */
-
-@media screen  {
-    
-}
